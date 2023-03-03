@@ -162,7 +162,7 @@ public class FileProcessingProgram {
             String line;
             int wordCount = 0;
             while ((line = bufferedReader.readLine()) != null) {
-                String[] words = line.split("\\s+");
+                String[] words = line.split("\\W+");
                 wordCount += words.length;
             }
             bufferedReader.close();
